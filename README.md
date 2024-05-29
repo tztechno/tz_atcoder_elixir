@@ -14,6 +14,7 @@ https://elixirschool.com/en
 ```
 ---
 ```
-
+single numberを取得する
+n = IO.read(:line) |> String.trim() |> String.to_integer()
 ```
 ---
