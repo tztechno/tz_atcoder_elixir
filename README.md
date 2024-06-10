@@ -10,7 +10,7 @@ https://elixirschool.com/en
 ```
 ---
 ```
-
+変数は小文字
 ```
 ---
 ```
