@@ -34,7 +34,25 @@ https://elixirschool.com/en
 ```
 ---
 ```
+defmodule Main do
+  def main do
+    case IO.read(:line) do
+      :eof -> IO.puts("無効な入力です")
+      line -> 
+        x = String.trim(line) |> String.at(0)
+        
+        cond do
+          x == "A" -> IO.puts("T")
+          x == "T" -> IO.puts("A")
+          x == "C" -> IO.puts("G")
+          x == "G" -> IO.puts("C")
+          true -> IO.puts("無効な入力です")
+        end
+    end
+  end
+end
 
+Main.main()
 ```
 ---
 ```
